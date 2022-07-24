@@ -6,7 +6,7 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve --livereload'. If you change this file, please restart the server process.
 #
 # If you need help with YAML syntax, here are some quick references for you: 
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
@@ -21,12 +21,13 @@
 title: Jing Jie's Portfolio
 email: jingjie105@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my website where I showcase all my projects that I have either
-  completed or is in the making.
+  Welcome to my website where I showcase my portfolio consisting of my projects that I have done over the years and more.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://lamjingjie.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: lam-jing-jie-5720771aa/
 github_username:  LamJingJie
+# Fields minima uses, but are not defaulted with the jekyll new command.
+author: Jing Jie
 
 # Build settings
 # Removed Minima theme as it is now a regular theme

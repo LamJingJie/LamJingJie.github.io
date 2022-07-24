@@ -10,10 +10,10 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading" style="font-size: 32px;">{{ page.list_title | default: "All" }}</h2>
   
     <ul class="post-list">
       {%- for post in site.posts -%}
+      {%- if post.category == "project" -%}
       <li>
         {%- assign date_format1 = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format1 }}</span>
@@ -26,6 +26,7 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
       </li>
+      {%- endif -%}
       {%- endfor -%}
     </ul>
 
