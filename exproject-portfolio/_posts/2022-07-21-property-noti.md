@@ -10,9 +10,17 @@ Sends notification to user device when an `property event` is nearing. The `noti
 
 Does not require internet to function. Data is stored inside your device cache using `localstorage`.
 
+<div class="video-container">
+  <h3 style="text-align: center;">Video</h3>
+  
+  <video src="https://user-images.githubusercontent.com/58838335/180790347-2acead91-c484-44dc-88e4-b61f56c1d82d.mp4" controls="controls" style="width: 100%;"></video>
+</div>
+
+<br><br>
 
 <div class="slideshow-container">
 <h3 style="text-align: center;">Screenshots</h3>
+
 <div class="mySlides fade">
   <div class="numbertext">1 / 8</div>
   <div style="width: 100%; text-align: center;">
@@ -75,12 +83,44 @@ Does not require internet to function. Data is stored inside your device cache u
 
 </div>
 
+# Example
+{% highlight ruby %}
+ return await LocalNotifications.schedule({
+        notifications: [
+            {
+                title:title + " (" + address + ") ",
+                body: "Ending at " + enddate + "!",
+                group:dategroup,
+                groupSummary:true,
+                autoCancel: false,
+                id: id,
+                extra:{
+                    data_address: address,
+                    data_title: title,
+                    data_enddate: enddate,
+                    data_dategroup: dategroup
+                },
+                iconColor: '#0000FF',
+                schedule: { at: date }, 
+            }
+        ]
+    })
+#=> Schedule notification data and time in accordance to the user.
+{% endhighlight %}
+
+<br>
 
 1. `Ionic 5 React` used as the frontend UI framework. Allowing me to build cross-platforms for IOS, Electron & Android.
 
 1. `LocalStorage` as the database in order to have it work effectively offline.
 
 1. `Typescript` as the main programming language followed by JS (for the backend)
+
+<br>
+
+Check it out on [Github/Property-Noti][github] for the source code.
+
+[github]: https://github.com/LamJingJie/property-noti
 
 
 <link rel="stylesheet" type="text/css" href="/exproject-portfolio/style/propertynoti/propertynoti.css">
