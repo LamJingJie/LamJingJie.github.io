@@ -6,20 +6,7 @@ category: project
 status: Done
 ---
 
-Sends notification to user device when an `property event` is nearing. The `notification date` cannot be set after the event day itself.
-
-Does not require internet to function. Data is stored inside your device cache using `localstorage`.
-
-<div class="video-container">
-  <h3 style="text-align: center;">Video</h3>
-  
-  <video src="https://user-images.githubusercontent.com/58838335/180790347-2acead91-c484-44dc-88e4-b61f56c1d82d.mp4" controls="controls" style="width: 100%;"></video>
-</div>
-
-<br><br>
-
 <div class="slideshow-container">
-<h3 style="text-align: center;">Screenshots</h3>
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 8</div>
@@ -82,6 +69,14 @@ Does not require internet to function. Data is stored inside your device cache u
 <a style="background-color: #717171;" class="next" onclick="plusSlides(1)">❯</a>
 
 </div>
+
+<br><br>
+
+Sends notification to user device when an `property event` is nearing. The `notification date` cannot be set after the event day itself.
+
+Does not require internet to function. Data is stored inside your device cache using `localstorage`.
+<br><br>
+
 
 # Example
 {% highlight ruby %}

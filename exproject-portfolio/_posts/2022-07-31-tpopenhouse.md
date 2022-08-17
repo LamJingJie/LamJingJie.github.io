@@ -6,27 +6,8 @@ category: project
 status: Done
 ---
 
-Project was chosen by the school to be used for Temasek Polytechnic Open House 2020 & 2021. I worked with 4 other students in building this application. My role of this project is that of a `front-end developer`. 
-
-When deployed during the open house over 3days, we have had upmost of about `2,600` downloads as of 17 January 2020.
-
-- Display Temasek Polytechnic's catalog of information (e.g. Courses).
-
-- Display activities that will be occuring on that day, and sends out notification to interested individuals when it is about to start.
-
-- A treasure hunting game using generated QR codes scattered throughout, with prizes to be won.
-
-<div class="video-container">
-  <h3 style="text-align: center;">Video</h3>
-  <div style="width: 100%; text-align: center;">
-    <video src="https://user-images.githubusercontent.com/58838335/182028546-c206b259-b30a-46b7-856c-457d55f7f1cc.mp4" controls="controls" style="width: 40%;"></video>
-  </div>
-</div>
-
-<br><br>
 
 <div class="slideshow-container">
-<h3 style="text-align: center;">Screenshots</h3>
 
  {% for img in site.tpopenhouse_image %}
   <div class="mySlides fade">
@@ -46,6 +27,29 @@ When deployed during the open house over 3days, we have had upmost of about `2,6
     <span class="dot" onclick="currentSlide({{img.index}})"></span> 
   {% endfor %}
 </div>
+
+<br><br>
+
+Project was chosen by the school to be used for Temasek Polytechnic Open House 2020 & 2021. I worked with 4 other students in building this application. My role of this project is that of a `front-end developer`. 
+
+When deployed during the open house over 3days, we have had upmost of about `2,600` downloads as of 17 January 2020.
+
+- Display Temasek Polytechnic's catalog of information (e.g. Courses).
+
+- Display activities that will be occuring on that day, and sends out notification to interested individuals when it is about to start.
+
+- A treasure hunting game using generated QR codes scattered throughout, with prizes to be won.
+
+<br><br>
+
+<div class="video-container">
+  <h3 style="text-align: center;">Video</h3>
+  <div style="width: 100%; text-align: center;">
+    <video muted src="https://user-images.githubusercontent.com/58838335/182028546-c206b259-b30a-46b7-856c-457d55f7f1cc.mp4" controls="controls" style="width: 35%;"></video>
+  </div>
+</div>
+
+
 
 
 <br>
