@@ -4,6 +4,7 @@ title:  "Property-Noti"
 date:   2021-03-12 22:24:07 +0800
 category: project
 status: Done
+default: all
 ---
 
 <div class="slideshow-container">
