@@ -5,6 +5,8 @@ date:   2021-03-12 22:24:07 +0800
 category: project
 status: Done
 default: all
+image: "/assets/propertynoti/propertynoti1.jpg"
+img_width: "40%"
 ---
 
 <div class="slideshow-container">

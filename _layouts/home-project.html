@@ -56,20 +56,23 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
   
-    <ul class="post-list">
+    <ul style="margin: 0px; padding: 0px;" class="post-list">
       {%- for post in site.posts -%}
       {%- if post.category == "project" -%}
-      <li>
-        {%- assign date_format1 = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format1 }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+      <li style="white-space: nowrap; display: inline-block; text-align: center;">
+  
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {%- assign date_format1 = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format1 }}</span>
+          <div>
             {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
+          </div>
+          <img src={{post.image}} width={{post.img_width}}>
+          {%- if site.show_excerpts -%}
           {{ post.excerpt }}
-        {%- endif -%}
+          {%- endif -%}
+        </a>
+  
       </li>
       {%- endif -%}
       {%- endfor -%}

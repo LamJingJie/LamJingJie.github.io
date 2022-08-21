@@ -51,28 +51,28 @@ layout: default
   <h1 class="page-heading">{{ page.title | default: 'All' }}</h1>
 
   
-
-  
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
+  <ul style="margin: 0px; padding: 0px;" class="post-list">
+    {%- for post in site.posts -%}
+    <li style="white-space: nowrap; display: inline-block; padding-right: 10%;">
   
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
+      <a class="post-link" href="{{ post.url | relative_url }}">
         {%- assign date_format1 = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format1 }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
+        <div>
+          {{ post.title | escape }}
+        </div>
+        <img style="max-height: 350px;" src={{post.image}}>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        {{ post.excerpt }}
         {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+      </a>
+
+    </li>
+    {%- endfor -%}
+  </ul>
 
    <!---<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>---> 
   {%- endif -%}
