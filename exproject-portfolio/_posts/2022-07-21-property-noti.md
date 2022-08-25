@@ -7,6 +7,7 @@ status: Done
 default: all
 image: "/assets/propertynoti/propertynoti1.jpg"
 img_width: "40%"
+about: "Sends notification to phone when an event is nearing regarding properties."
 ---
 
 <div class="slideshow-container">
@@ -75,7 +76,7 @@ img_width: "40%"
 
 <br><br>
 
-Sends notification to user device when an `property event` is nearing. The `notification date` cannot be set after the event day itself.
+Allows user to add, create or delete their `property event`. Sends notification to user device when an `property event` is nearing. The `notification date` cannot be set after the event day itself.
 
 Does not require internet to function. Data is stored inside your device cache using `localstorage`.
 <br><br>

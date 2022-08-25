@@ -59,15 +59,21 @@ layout: default
     <ul style="margin: 0px; padding: 0px;" class="post-list">
       {%- for post in site.posts -%}
       {%- if post.category == "project" -%}
-      <li style="white-space: nowrap; display: inline-block; text-align: center;">
+      <li style="white-space: nowrap; display: inline-block; padding-right: 10%;">
   
-        <a class="post-link" href="{{ post.url | relative_url }}">
+        <a style="width: inherit;" class="post-link" href="{{ post.url | relative_url }}">
           {%- assign date_format1 = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">{{ post.date | date: date_format1 }}</span>
           <div>
             {{ post.title | escape }}
           </div>
-          <img src={{post.image}} width={{post.img_width}}>
+          <div class="post_img_container">
+            <img style="max-height:350px; " src={{post.image}} />
+            <div class="post_about">
+              {{post.about}}
+            </div>
+          </div>
+          
           {%- if site.show_excerpts -%}
           {{ post.excerpt }}
           {%- endif -%}
@@ -82,3 +88,5 @@ layout: default
   {%- endif -%}
 
 </div>
+
+<link rel="stylesheet" type="text/css" href="/main.css">

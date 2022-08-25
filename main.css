@@ -1,0 +1,31 @@
+.post_img_container{
+    position: relative;
+    float: left;
+}
+
+
+
+.post_img_container:hover div{
+    width: 90%;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
+.post_about {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    right:0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 11px;
+    white-space: normal;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+

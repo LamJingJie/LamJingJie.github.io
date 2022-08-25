@@ -7,6 +7,7 @@ status: Done
 default: all
 image: "/assets/tpopenhouse/tpopenhouse1.png"
 img_width: "55%"
+about: "An app for showcasing and promoting Temasek Polytechnic."
 ---
 
 
