@@ -252,3 +252,9 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+
+//So that it wouldnt be affected by the Dark Mode
+.language-plaintext, .n, .p, .o{
+  color: black;
+}

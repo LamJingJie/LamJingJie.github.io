@@ -62,7 +62,7 @@ layout: default
       <li style="white-space: nowrap; display: inline-block; padding-right: 10%;">
   
         <a style="width: inherit;" class="post-link" href="{{ post.url | relative_url }}">
-          {%- assign date_format1 = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {%- assign date_format1 = site.minima.date_format | default: "%b, %Y" -%}
           <span class="post-meta">{{ post.date | date: date_format1 }}</span>
           <div>
             {{ post.title | escape }}
