@@ -8,83 +8,101 @@ layout: default
     <!--GRID container-->
     <ul style="font-size: 11px; margin: 0px; padding: 0px;">
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;">
-        <a style="color:rgb(255, 7, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 7, 255); border-radius: 10px; padding: 5px;">Ionic Framework</a>
+        <a
+          style="color:rgb(255, 113, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 7, 255); border-radius: 10px; padding: 5px;">Ionic
+          Framework</a>
       </li>
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;;">
-        <a style="color:rgb(255, 7, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 7, 255); border-radius: 10px; padding: 5px;" >Angular Framework</a>
+        <a
+          style="color:rgb(255, 113, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 113, 255); border-radius: 10px; padding: 5px;">Angular
+          Framework</a>
       </li>
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;;">
-        <a style="color:rgb(255, 7, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 7, 255); border-radius: 10px; padding: 5px;" >Web Development</a>
+        <a
+          style="color:rgb(255, 113, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 113, 255); border-radius: 10px; padding: 5px;">Web
+          Development</a>
       </li>
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;;">
-        <a style="color:rgb(255, 7, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 7, 255); border-radius: 10px; padding: 5px;" >Mobile Development</a>
+        <a
+          style="color:rgb(255, 113, 255); background-color: rgb(43, 43, 43); border: 2px solid rgb(255, 113, 255); border-radius: 10px; padding: 5px;">Mobile
+          Development</a>
       </li>
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;;">
-        <a style="color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;" >Teamwork</a>
+        <a
+          style="color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;">Teamwork</a>
       </li>
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;;">
-        <a style="color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;" >Easy-Going</a>
+        <a
+          style="color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;">Easy-Going</a>
       </li>
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;;">
-        <a style=" color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;" >Honest</a>
+        <a
+          style=" color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;">Honest</a>
       </li>
       <li style="white-space: nowrap; margin: 10px 0; display: inline-block;;">
-        <a style=" color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;" >Organization SKills</a>
+        <a
+          style=" color:rgb(25, 252, 115); background-color: rgb(43, 43, 43); border: 2px solid rgb(25, 252, 115); border-radius: 10px; padding: 5px;">Organization
+          SKills</a>
       </li>
-      
+
     </ul>
   </div>
   <div class="about_data" style="flex:1; font-size: 12px;">
     <p style="padding-bottom: 15px;">
-      I have graduated from the diploma of Information Technology at Temasek Polytechnic in May 2021, I was in the Director List in my 2nd Year. 
+      I have graduated from the diploma of Information Technology at Temasek Polytechnic in May 2021, I was in the
+      Director List in my 2nd Year.
     </p>
     <p style="padding-bottom: 15px;">
-      I have always believed in giving my best in everything I do. Results are always important, but for me, giving my all is what is most important as the path to growing and becoming more skillful are from reaping the lessons learnt and continually improving upon them.
+      I have always believed in giving my best in everything I do. Results are always important, but for me, giving my
+      all is what is most important as the path to growing and becoming more skillful are from reaping the lessons
+      learnt and continually improving upon them.
     </p>
     <p>
-      I became passionate in Information Technology after my 1st Year studying it. I would like to fulfill my fullest potential in a challenging environment where my organizational skills, coupled with my natural curiosity, will make a difference in a dynamic organization.
+      I became passionate in Information Technology after my 1st Year studying it. I would like to fulfill my fullest
+      potential in a challenging environment where my organizational skills, coupled with my natural curiosity, will
+      make a difference in a dynamic organization.
     </p>
   </div>
 </div>
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-  
-    <ul style="margin: 0px; padding: 0px;" class="post-list">
-      {%- for post in site.posts -%}
-      {%- if post.category == "project" -%}
-      <li style="white-space: nowrap; display: inline-block; padding-right: 10%;">
-  
-        <a style="width: inherit;" class="post-link" href="{{ post.url | relative_url }}">
-          {%- assign date_format1 = site.minima.date_format | default: "%b, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format1 }}</span>
-          <div>
-            {{ post.title | escape }}
-          </div>
-          <div class="post_img_container">
-            <img style="max-height:350px; " src={{post.image}} />
-            <div class="post_about">
-              {{post.about}}
-            </div>
-          </div>
-          
-          {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-          {%- endif -%}
-        </a>
-  
-      </li>
-      {%- endif -%}
-      {%- endfor -%}
-    </ul>
 
-   <!---<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>---> 
+  <ul style="margin: 0px; padding: 0px;" class="post-list">
+    {%- for post in site.posts -%}
+    {%- if post.category == "project" -%}
+    <li style="white-space: nowrap; display: inline-block; padding-right: 10%;">
+
+      <a style="width: inherit;" class="post-link" href="{{ post.url | relative_url }}">
+        {%- assign date_format1 = site.minima.date_format | default: "%b, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format1 }}</span>
+        <div>
+          {{ post.title | escape }}
+        </div>
+        <div class="post_img_container">
+          <img style="max-height:350px; " src={{post.image}} />
+          <div class="post_about">
+            {{post.about}}
+          </div>
+        </div>
+
+        {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+        {%- endif -%}
+      </a>
+
+    </li>
+    {%- endif -%}
+    {%- endfor -%}
+  </ul>
+
+  <!---<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>--->
   {%- endif -%}
 
 </div>
