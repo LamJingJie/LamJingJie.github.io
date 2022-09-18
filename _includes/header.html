@@ -98,10 +98,11 @@
       transition: background-color 1s;
     }
 
+
     
   </style>
 
-
+<body onload="runOnLoad()">
   <div class="wrapper" style="display: flex;">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -146,9 +147,10 @@
     </nav>
     {%- endif -%}
   </div>
-<script src="/mobilecheck.js"></script>
+</body>
  
 </header>
 
 <link rel="stylesheet" type="text/css" href="/main.css">
 <script src="/darkmode.js"></script>
+<script src="/mobilecheck.js"></script>

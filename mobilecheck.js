@@ -6,6 +6,7 @@ console.log("TEST");
 // dark-mode media query matched or not
 let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+function runOnLoad(){
   //console.log("Run mobile check!!!");
   alert("Run mobile");
 
@@ -20,20 +21,21 @@ let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
   }else{
     toggle_container?.classList.remove("remove");
   }
- 
+}
+
 
 function checkColorScheme(){
   if(matched){
     alert("Dark mode");
+    document.body.classList.add('darkmode');
     site_title?.classList.add("headerStyling");
     site_nav?.classList.add("navStyling");
-    document.body.classList.add('darkmode');
     return
   }else{
     alert("None dark");
+    document.body.classList.remove('darkmode');
     site_title?.classList.remove("headerStyling");
     site_nav?.classList.remove("navStyling");
-    document.body.classList.remove('darkmode');
     return
   }
 }
