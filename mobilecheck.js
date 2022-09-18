@@ -2,7 +2,7 @@ let check = false;
 let toggle_container = document.getElementById("togglecontainer");
 let site_title = document.getElementById("site-title");
 let site_nav = document.getElementById("site-nav");
-
+console.log("TEST");
 // dark-mode media query matched or not
 let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -28,6 +28,7 @@ function checkColorScheme(){
     site_title?.classList.add("headerStyling");
     site_nav?.classList.add("navStyling");
   }else{
+    alert("None dark");
     site_title?.classList.remove("headerStyling");
     site_nav?.classList.remove("navStyling");
   }
