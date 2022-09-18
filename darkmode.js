@@ -4,6 +4,10 @@ const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
 let site_title = document.getElementById("site-title");
 let site_nav = document.getElementById("site-nav");
+
+
+
+
 /*
 const enableDarkMode = () => {
   // 1. Add the class to the body
@@ -23,11 +27,36 @@ const disableDarkMode = () => {
   localStorage.setItem('darkMode', null);
 }*/
 
+//Android Devices
+document.addEventListener("backbutton", onBackButton);
+
+function onBackButton(e){
+  //display popup
+  alert(e);
+  alert("Back btn is clicked");
+  darkMode = localStorage.getItem('darkMode'); 
+  if(darkMode==="enabled"){
+    document.body.classList.add('darkmode');
+    site_title?.classList.add("headerStyling");
+    site_nav?.classList.add("navStyling");
+  }else{
+    document.body.classList.remove('darkmode');
+    site_title?.classList.remove("headerStyling");
+    site_nav?.classList.remove("navStyling");
+  }
+  document.querySelector(".moon-logo").classList.toggle("animate-moon");
+  document.querySelector(".sun-logo").classList.toggle("animate-sun");
+}
+
+
 const toggleDarkMode = (status)=>{
+  localStorage.setItem('darkMode', status);
   document.body.classList.toggle('darkmode');
   site_title?.classList.toggle("headerStyling");
   site_nav?.classList.toggle("navStyling");
-  localStorage.setItem('darkMode', status);
+  //Bring moon infront and hide the sun
+  document.querySelector(".sun-logo").classList.toggle("animate-sun");
+  document.querySelector(".moon-logo").classList.toggle("animate-moon");
 }
  
 // If the user already visited and enabled darkMode
@@ -35,19 +64,13 @@ const toggleDarkMode = (status)=>{
 if (darkMode === 'enabled') {
   //enableDarkMode();
   toggleDarkMode('enabled');
-  //Bring moon infront and hide the sun
-  document.querySelector(".moon-logo").classList.toggle("animate-moon");
-  document.querySelector(".sun-logo").classList.toggle("animate-sun");
 };
 
 // When someone clicks the button
 darkModeToggle.addEventListener('click', () => {
   // get their darkMode setting
   darkMode = localStorage.getItem('darkMode'); 
-
-  //Animate darkmode btn
-  document.querySelector(".sun-logo").classList.toggle("animate-sun");
-  document.querySelector(".moon-logo").classList.toggle("animate-moon");
+ 
   // if it not current enabled, enable it
   if (darkMode !== 'enabled') {
     //enableDarkMode();

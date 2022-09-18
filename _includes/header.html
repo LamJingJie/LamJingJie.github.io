@@ -1,3 +1,5 @@
+
+
 <header class="site-header" role="banner">
   <script src="https://kit.fontawesome.com/3e6bbcf0d8.js" crossorigin="anonymous"></script>
   <style>
@@ -15,6 +17,10 @@
       --ff-body: "Assistant", sans-serif;
       --light: #d8dbe0;
       --dark: #28292c;
+    }
+
+    .remove{
+      display: none !important;
     }
 
     /*--------------Dark Mode--------------*/
@@ -46,6 +52,10 @@
       background: none;
       border: none;
       padding: 0;
+    }
+
+    .toggle:hover{
+      cursor: pointer;
     }
 
     .sun,
@@ -87,25 +97,49 @@
     body {
       transition: background-color 1s;
     }
+
+    
+    /*Mobile*/
+    @media (max-width: 800px){
+      @media (prefers-color-scheme: dark) {
+      .darkmode {
+      background-color: #28282B !important;
+      color: whitesmoke !important;
+      }
+
+      #site-title{
+        color: whitesmoke !important;
+      }
+
+      #site-nav{
+        color: whitesmoke !important;
+        border: 1px solid none;
+      }
+    }
+    }
+
+    
   </style>
 
-
+<body >
   <div class="wrapper" style="display: flex;">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a style="flex: 2;" id="site-title" class="site-title" rel="author" href="/">{{ site.title |
       escape }}</a>
-
-    <div style="flex: 2;" class="container">
-      <button class="toggle" id="dark-mode-toggle" aria-label="Dark mode toggle">
-        <div class="sun sun-logo">
-          <i class="fas fa-sun"></i>
-        </div>
-        <div class="moon moon-logo">
-          <i class="fas fa-moon"></i>
-        </div>
-      </button>
-    </div>
+      
+     
+      <div style="flex: 2;" class="container" id="togglecontainer" >
+        <button class="toggle" id="dark-mode-toggle" aria-label="Dark mode toggle">
+          <div class="sun sun-logo">
+            <i class="fas fa-sun"></i>
+          </div>
+          <div class="moon moon-logo">
+            <i class="fas fa-moon"></i>
+          </div>
+        </button>
+      </div>
+     
 
 
     {%- if page_paths -%}
@@ -132,7 +166,10 @@
     </nav>
     {%- endif -%}
   </div>
+</body>
+ 
 </header>
 
 <link rel="stylesheet" type="text/css" href="/main.css">
 <script src="/darkmode.js"></script>
+<script src="/mobilecheck.js"></script>
