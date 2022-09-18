@@ -1,29 +1,10 @@
+//------------This js file is used for website or ios only----------------
+
 let darkMode = localStorage.getItem('darkMode'); 
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 let site_title = document.getElementById("site-title");
 let site_nav = document.getElementById("site-nav");
-
-
-
-/*
-const enableDarkMode = () => {
-  // 1. Add the class to the body
-  document.body.classList.add('darkmode');
-  site_title?.classList.add("headerStyling");
-  site_nav?.classList.add("navStyling");
-  // 2. Update darkMode in localStorage
-  localStorage.setItem('darkMode', 'enabled');
-}
-
-const disableDarkMode = () => {
-  // 1. Remove the class from the body
-  document.body.classList.remove('darkmode');
-  site_title?.classList.remove("headerStyling");
-  site_nav?.classList.remove("navStyling");
-  // 2. Update darkMode in localStorage 
-  localStorage.setItem('darkMode', null);
-}*/
 
 
 
