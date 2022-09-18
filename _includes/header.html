@@ -93,7 +93,7 @@
   <div class="wrapper" style="display: flex;">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a style="flex: 2;" id="site-title" class="site-title" rel="author" href="{{ " /" | relative_url }}">{{ site.title |
+    <a style="flex: 2;" id="site-title" class="site-title" rel="author" href="/">{{ site.title |
       escape }}</a>
 
     <div style="flex: 2;" class="container">
