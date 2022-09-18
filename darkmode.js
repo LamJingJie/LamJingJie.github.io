@@ -65,7 +65,7 @@ darkModeToggle.addEventListener('click', () => {
 
 //Android Devices
 
-/*
+
 function onBackButton(e){
   //display popup
   alert(e);
@@ -82,15 +82,4 @@ function onBackButton(e){
   }
   document.querySelector(".moon-logo").classList.toggle("animate-moon");
   document.querySelector(".sun-logo").classList.toggle("animate-sun");
-}*/
-
-$(window).on("navigate", function (event, data) {
-  var direction = data.state.direction;
-  alert("Back btn is clicked");
-  if (direction == 'back') {
-    // do something
-  }
-  if (direction == 'forward') {
-    // do something else
-  }
-});
+}
