@@ -83,7 +83,7 @@ function onBackButton(e){
   document.querySelector(".moon-logo").classList.toggle("animate-moon");
   document.querySelector(".sun-logo").classList.toggle("animate-sun");
 }*/
-/*
+
 $(window).on("navigate", function (event, data) {
   var direction = data.state.direction;
   alert("Back btn is clicked");
@@ -93,13 +93,4 @@ $(window).on("navigate", function (event, data) {
   if (direction == 'forward') {
     // do something else
   }
-});*/
-
-window.onpopstate = function(e) { 
-  alert("Back btn is clicked");
-  
-};
-
-window.onhashchange = function(e) {
-  alert("Back btn is clicked2");
-}
+});
