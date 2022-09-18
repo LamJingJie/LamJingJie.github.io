@@ -27,9 +27,13 @@ function checkColorScheme(){
     alert("Dark mode");
     site_title?.classList.add("headerStyling");
     site_nav?.classList.add("navStyling");
+    document.body.classList.add('darkmode');
+    return
   }else{
     alert("None dark");
     site_title?.classList.remove("headerStyling");
     site_nav?.classList.remove("navStyling");
+    document.body.classList.remove('darkmode');
+    return
   }
 }
