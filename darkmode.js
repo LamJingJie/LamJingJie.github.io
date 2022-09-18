@@ -1,7 +1,6 @@
 let darkMode = localStorage.getItem('darkMode'); 
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
-
 let site_title = document.getElementById("site-title");
 let site_nav = document.getElementById("site-nav");
 
@@ -59,24 +58,4 @@ darkModeToggle.addEventListener('click', () => {
     //disableDarkMode(); 
     toggleDarkMode(null);
   }
-});
-
-
-//Android Devices
-
-document.addEventListener("backbutton", function(){
-  alert(e);
-  alert("Back btn is clicked");
-  darkMode = localStorage.getItem('darkMode'); 
-  if(darkMode==="enabled"){
-    document.body.classList.add('darkmode');
-    site_title?.classList.add("headerStyling");
-    site_nav?.classList.add("navStyling");
-  }else{
-    document.body.classList.remove('darkmode');
-    site_title?.classList.remove("headerStyling");
-    site_nav?.classList.remove("navStyling");
-  }
-  document.querySelector(".moon-logo").classList.toggle("animate-moon");
-  document.querySelector(".sun-logo").classList.toggle("animate-sun");
 });
