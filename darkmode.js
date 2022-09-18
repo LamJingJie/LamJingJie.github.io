@@ -5,7 +5,6 @@ const darkModeToggle = document.querySelector('#dark-mode-toggle');
 let site_title = document.getElementById("site-title");
 let site_nav = document.getElementById("site-nav");
 
-document.addEventListener("backbutton", onBackButton);
 
 
 /*
@@ -65,9 +64,7 @@ darkModeToggle.addEventListener('click', () => {
 
 //Android Devices
 
-
-function onBackButton(e){
-  //display popup
+document.addEventListener("backbutton", function(){
   alert(e);
   alert("Back btn is clicked");
   darkMode = localStorage.getItem('darkMode'); 
@@ -82,4 +79,4 @@ function onBackButton(e){
   }
   document.querySelector(".moon-logo").classList.toggle("animate-moon");
   document.querySelector(".sun-logo").classList.toggle("animate-sun");
-}
+});
