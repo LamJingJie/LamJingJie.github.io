@@ -1,8 +1,6 @@
-
-
 <header class="site-header" role="banner">
   <script src="https://kit.fontawesome.com/3e6bbcf0d8.js" crossorigin="anonymous"></script>
-  
+
   <style>
     :root {
       --clr-light: #fdffc4;
@@ -20,7 +18,7 @@
       --dark: #28292c;
     }
 
-    .remove{
+    .remove {
       display: none !important;
     }
 
@@ -55,7 +53,7 @@
       padding: 0;
     }
 
-    .toggle:hover{
+    .toggle:hover {
       cursor: pointer;
     }
 
@@ -98,30 +96,26 @@
     body {
       transition: background-color 1s;
     }
-
-
-    
   </style>
 
-<body onload="runOnLoad()">
   <div class="wrapper" style="display: flex;">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a style="flex: 2;" id="site-title" class="site-title" rel="author" href="/">{{ site.title |
       escape }}</a>
-      
-     
-      <div style="flex: 2;" class="container" id="togglecontainer" >
-        <button class="toggle" id="dark-mode-toggle" aria-label="Dark mode toggle">
-          <div class="sun sun-logo">
-            <i class="fas fa-sun"></i>
-          </div>
-          <div class="moon moon-logo">
-            <i class="fas fa-moon"></i>
-          </div>
-        </button>
-      </div>
-     
+
+
+    <div style="flex: 2;" class="container" id="togglecontainer">
+      <button class="toggle" id="dark-mode-toggle" aria-label="Dark mode toggle">
+        <div class="sun sun-logo">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="moon moon-logo">
+          <i class="fas fa-moon"></i>
+        </div>
+      </button>
+    </div>
+
 
 
     {%- if page_paths -%}
@@ -148,9 +142,8 @@
     </nav>
     {%- endif -%}
   </div>
-</body>
-<script src="/darkmode.js"></script>
+
+  <script src="/darkmode.js"></script>
 </header>
 
 <link rel="stylesheet" type="text/css" href="/main.css">
-
