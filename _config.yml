@@ -46,11 +46,11 @@ tlextractor_img:
     -
         index: 4
         img_name: "pic4.png"
-        width: "60%"
+        width: "80%"
     -
         index: 5
         img_name: "pic5.png"
-        width: "60%"
+        width: "80%"
 
 varbot_img:
     -

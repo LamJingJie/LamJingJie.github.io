@@ -6,7 +6,7 @@ category: project
 status: Done
 default: all
 image: "/assets/tlextractor/pic3.png"
-img_width: "70%"
+img_width: "90%"
 about: "Extracts student project data out from Tldraw."
 ---
 
@@ -37,7 +37,6 @@ TLExtractor is a Python script that extracts data from tldraw pages, saves it as
 This is mainly used to extract specific students data. Where they would utilize a template to submit their project to. In which this script would then utilize to extract the necessary data.
 
 
-
 <br><br>
 
 <div class="video-container">
@@ -46,6 +45,20 @@ This is mainly used to extract specific students data. Where they would utilize 
   <video src="https://github.com/user-attachments/assets/dc9f5a26-42ee-4a25-8939-9bdc7ec75dfa" controls="controls" style="width: 100%;"></video>
 </div>
 
+<br>
+
+1. `Depth-First Search` algorithm used to search through tree-like data structure, starting from the deepest and working up.
+
+1. `Playwright` website scrapper.
+
+1. `Multi-Threading` used to create multiple threads of pages, switching back-n-forth whenever a Thread is waiting. Concurrency.
+
+1. `Multi-Processing` used to process multiple images in true parallel
+
+1. `Python` as the main programming language.
+
+
+<br>
 
 # Example
 {% highlight ruby %}
@@ -58,24 +71,14 @@ This is mainly used to extract specific students data. Where they would utilize 
              "date": "DUE 26 MAY (SUNDAY) 2359",
              "description": "First iteration of site in blender/rhino",
              "students": [
-                 "sean hung xiang hui",
-                 "ooi zher xian",
-                 "kiatkongchayin akrapong"
+                 "person1",
+                 "person2",
+                 "person3",
              ]
          }
      ]
 }
 {% endhighlight %}
-
-<br>
-
-1. `Depth-First Search` algorithm used to search through tree-like data structure, starting from the deepest and working up.
-
-1. `Playwright` website scrapper.
-
-1. `Python` as the main programming language.
-
-1. `Multi-Threading` used to create multiple threads of pages
 
 <br>
 
