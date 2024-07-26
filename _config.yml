@@ -29,6 +29,58 @@ github_username:  LamJingJie
 # Fields minima uses, but are not defaulted with the jekyll new command.
 author: Jing Jie
 
+tlextractor_img:
+    -
+        index: 1
+        img_name: "pic1.png"
+        width: "35%"
+    -
+        index: 2
+        img_name: "pic2.png"
+        width: "35%"
+    -
+        index: 3
+        img_name: "pic3.png"
+        width: "35%"
+    -
+        index: 4
+        img_name: "pic4.png"
+        width: "35%"
+    -
+        index: 5
+        img_name: "pic5.png"
+        width: "35%"
+
+treat_image:
+    -
+        index: 1
+        img_name: "treat_0.png"
+        width: "35%"
+    -
+        index: 2
+        img_name: "treat_1.png"
+        width: "35%"
+    -
+        index: 3
+        img_name: "treat_2.png"
+        width: "35%"
+    -
+        index: 4
+        img_name: "treat_3.png"
+        width: "35%"
+    -
+        index: 5
+        img_name: "treat_4.png"
+        width: "35%"
+    -
+        index: 6
+        img_name: "treat_5.png"
+        width: "35%"
+    -
+        index: 7
+        img_name: "treat_6.png"
+        width: "35%"
+
 tpopenhouse_image:
     -
         index: 1

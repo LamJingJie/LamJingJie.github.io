@@ -5,53 +5,23 @@ date:   2024-07-26 22:24:07 +0800
 category: project
 status: Done
 default: all
-image: "/assets/tlextractor/pic3.jpg"
+image: "/assets/tlextractor/pic3.png"
 img_width: "40%"
 about: "Extracts data out from Tldraw."
 ---
 
 <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <div style="width: 100%; text-align: center;">
-    <img src="/assets/tlextractor/pic1.jpg" style="width:30%;">
+ {% for img in site.tlextractor_img %}
+  <div class="mySlides fade">
+    <div class="numbertext">{{img.index}} / {{site.tlextractor_img.length()}}</div>
+    <div style="width: 100%; text-align: center;">
+      <img src="/assets/treat/{{img.img_name}}" style="width: {{img.width}}">
+    </div>
   </div>
-  
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-   <div style="width: 100%; text-align: center;">
-    <img src="/assets/tlextractor/pic2.jpg" style="width:30%">
-   </div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-   <div style="width: 100%; text-align: center;">
-    <img src="/assets/tlextractor/pic3.jpg" style="width:30%">
-   </div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-   <div style="width: 100%; text-align: center;">
-    <img src="/assets/tlextractor/pic4.jpg" style="width:30%">
-   </div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-   <div style="width: 100%; text-align: center;">
-    <img src="/assets/tlextractor/pic5.jpg" style="width:30%">
-   </div>
-</div>
-
-
-
-<a style="background-color: #717171;" class="prev" onclick="plusSlides(-1)">❮</a>
-<a style="background-color: #717171;" class="next" onclick="plusSlides(1)">❯</a>
+  <a style="background-color: #717171;" class="prev" onclick="plusSlides(-1)">❮</a>
+  <a style="background-color: #717171;" class="next" onclick="plusSlides(1)">❯</a>
+ {% endfor %}
 
 </div>
 
