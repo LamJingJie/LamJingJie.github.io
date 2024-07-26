@@ -6,14 +6,14 @@ category: project
 status: Done
 default: all
 image: "/assets/tlextractor/pic3.png"
-img_width: "50%"
+img_width: "70%"
 about: "Extracts student project data out from Tldraw."
 ---
 
 <div class="slideshow-container">
  {% for img in site.tlextractor_img %}
   <div class="mySlides fade">
-    <div class="numbertext">{{img.index}} / {{site.tlextractor_img.length()}}</div>
+    <div class="numbertext">{{img.index}} / {{len(site.tlextractor_img)}}</div>
     <div style="width: 100%; text-align: center;">
       <img src="/assets/tlextractor/{{img.img_name}}" style="width: {{img.width}}">
     </div>

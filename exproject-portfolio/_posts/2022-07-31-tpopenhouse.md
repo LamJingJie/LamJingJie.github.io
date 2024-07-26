@@ -15,7 +15,7 @@ about: "An app for showcasing and promoting Temasek Polytechnic."
 
  {% for img in site.tpopenhouse_image %}
   <div class="mySlides fade">
-    <div class="numbertext">{{img.index}} / {{site.tpopenhouse_image.length()}}</div>
+    <div class="numbertext">{{img.index}} / {{len(site.tpopenhouse_image)}}</div>
     <div style="width: 100%; text-align: center;">
       <img src="/assets/tpopenhouse/{{img.img_name}}" style="width: {{img.width}}">
     </div>
