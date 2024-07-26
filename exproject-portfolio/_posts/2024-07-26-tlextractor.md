@@ -15,14 +15,19 @@ about: "Extracts data out from Tldraw."
   <div class="mySlides fade">
     <div class="numbertext">{{img.index}} / {{site.tlextractor_img.length()}}</div>
     <div style="width: 100%; text-align: center;">
-      <img src="/assets/treat/{{img.img_name}}" style="width: {{img.width}}">
+      <img src="/assets/tlextractor/{{img.img_name}}" style="width: {{img.width}}">
     </div>
   </div>
 
   <a style="background-color: #717171;" class="prev" onclick="plusSlides(-1)">❮</a>
   <a style="background-color: #717171;" class="next" onclick="plusSlides(1)">❯</a>
  {% endfor %}
+</div>
 
+<div style="text-align:center">
+  {% for img in site.tlextractor_img %}
+    <span class="dot" onclick="currentSlide({{img.index}})"></span> 
+  {% endfor %}
 </div>
 
 <br><br>
