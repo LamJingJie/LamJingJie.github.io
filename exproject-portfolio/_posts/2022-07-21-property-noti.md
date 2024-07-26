@@ -14,7 +14,7 @@ about: "Sends notification to phone when an event is nearing regarding propertie
 
  {% for img in site.propertyNoti_img %}
   <div class="mySlides fade">
-    <div class="numbertext">{{img.index}} / {{site.propertyNoti_img.length()}}</div>
+    <div class="numbertext">{{img.index}} / {{site.propertyNoti_img.length}}</div>
     <div style="width: 100%; text-align: center;">
       <img src="/assets/propertynoti/{{img.img_name}}" style="width: {{img.width}}">
     </div>

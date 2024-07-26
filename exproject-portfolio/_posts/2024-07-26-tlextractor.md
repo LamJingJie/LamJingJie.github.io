@@ -6,8 +6,8 @@ category: project
 status: Done
 default: all
 image: "/assets/tlextractor/pic3.png"
-img_width: "40%"
-about: "Extracts data out from Tldraw."
+img_width: "50%"
+about: "Extracts student project data out from Tldraw."
 ---
 
 <div class="slideshow-container">
