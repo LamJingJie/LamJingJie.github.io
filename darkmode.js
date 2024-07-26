@@ -27,11 +27,9 @@ darkModeToggle.addEventListener('click', () => {
 
   // if it not current enabled, enable it
   if (darkMode !== 'enabled') {
-    //enableDarkMode();
     toggleDarkMode('enabled');
     // if it has been enabled, turn it off  
   } else {
-    //disableDarkMode(); 
     toggleDarkMode(null);
   }
 });
@@ -62,8 +60,6 @@ if (check === true) {
 
   //If the user already visited and enabled darkMode
   if (darkMode === 'enabled') {
-    //enableDarkMode();
-    //console.log("Enabled")
     toggleDarkMode('enabled');
   };
 }
@@ -73,12 +69,10 @@ if (check === true) {
 //Change web to darkmode if user has darkmode enabled on their android devices.
 function checkColorScheme() {
   if (matched) {
-    //alert("Dark mode");
     document.body.classList.add('darkmode');
     site_title?.classList.add("headerStyling");
     site_nav?.classList.add("navStyling");
   } else {
-    //alert("None dark");
     document.body.classList.remove('darkmode');
     site_title?.classList.remove("headerStyling");
     site_nav?.classList.remove("navStyling");
