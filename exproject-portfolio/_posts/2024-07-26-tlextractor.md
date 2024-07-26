@@ -13,7 +13,7 @@ about: "Extracts student project data out from Tldraw."
 <div class="slideshow-container">
  {% for img in site.tlextractor_img %}
   <div class="mySlides fade">
-    <div class="numbertext">{{img.index}} / {{len(site.tlextractor_img)}}</div>
+    <div class="numbertext">{{img.index}} / {{site.tlextractor_img | size}}</div>
     <div style="width: 100%; text-align: center;">
       <img src="/assets/tlextractor/{{img.img_name}}" style="width: {{img.width}}">
     </div>
