@@ -16,7 +16,10 @@ const toggleDarkMode = (status) => {
   document.body.classList.toggle('darkmode');
   site_title?.classList.toggle("headerStyling");
   site_nav?.classList.toggle("navStyling");
-  border?.classList.toggle("border");
+  Array.from(border).forEach(element => {
+    element.classList.toggle("border");
+  });
+
   //Bring moon infront and hide the sun
   document.querySelector(".sun-logo").classList.toggle("animate-sun");
   document.querySelector(".moon-logo").classList.toggle("animate-moon");
