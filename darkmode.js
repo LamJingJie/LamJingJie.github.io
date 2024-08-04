@@ -3,15 +3,16 @@
 let darkMode = localStorage.getItem('darkMode');
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
-let site_title = document.getElementById("site-title");
-let site_nav = document.getElementById("site-nav");
-let pfp = document.getElementById("mypfp");
-
 let toggle_container = document.getElementById("togglecontainer");
 let check = false;
 
 // Assume dark mode is off if not set in local storage
 const toggleDarkMode = (status) => {
+  let site_title = document.getElementById("site-title");
+  let site_nav = document.getElementById("site-nav");
+  let pfp = document.getElementById("mypfp");
+
+
   localStorage.setItem('darkMode', status);
   document.body.classList.toggle('darkmode');
   site_title?.classList.toggle("headerStyling");
@@ -75,6 +76,10 @@ if (check === true) {
 
 //Change web to darkmode if user has darkmode enabled on their android devices.
 function checkColorScheme() {
+  let site_title = document.getElementById("site-title");
+  let site_nav = document.getElementById("site-nav");
+  let pfp = document.getElementById("mypfp");
+
   if (matched) {
     document.body.classList.add('darkmode');
     site_title?.classList.add("headerStyling");
