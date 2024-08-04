@@ -32,10 +32,12 @@
 
 :root {
     --clr-light: #fdffc4;
-    --clr-dark: #00332a;
+    --clr-dark: #28282B;
     --clr-primary: #dbffa2;
     --clr-secondary: #c3fcf2;
     --clr-accent: #ff7750;
+    --clr-border: #fdffc4;
+    --clr-text-light: whitesmoke;
   
     --foreground: var(--clr-dark);
     --background: var(--clr-light);
@@ -44,16 +46,23 @@
     --ff-body: "Assistant", sans-serif;
   }
 
-  .darkmode {
-    --clr-light: #fdffc4;
-    --clr-dark: #00332a;
-    --clr-primary: #202302;
-    --clr-secondary: #00100d;
-    --clr-accent: #ff7750;
-  
-    --foreground: var(--clr-light);
-    --background: var(--clr-dark);
-  }
+/*--------------Dark Mode--------------*/
+.darkmode {
+    background-color: var(--clr-dark) !important;
+    color: var(--clr-text-light) !important;
+}
+    
+.headerStyling {
+    color: var(--clr-text-light) !important;
+}
+    
+.navStyling {
+    background: none;
+    color: var(--clr-text-light) !important;
+    border: 1px solid none;
+}
 
-
+.border {
+    border: 4px solid var(--clr-border);
+}
 
