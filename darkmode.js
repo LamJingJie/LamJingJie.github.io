@@ -5,7 +5,7 @@ let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 let site_title = document.getElementById("site-title");
 let site_nav = document.getElementById("site-nav");
-let mypfp = document.getElementsByClassName("mypfp");
+let mypfp = document.getElementById("mypfp");
 
 let toggle_container = document.getElementById("togglecontainer");
 let check = false;
@@ -16,9 +16,7 @@ const toggleDarkMode = (status) => {
   document.body.classList.toggle('darkmode');
   site_title?.classList.toggle("headerStyling");
   site_nav?.classList.toggle("navStyling");
-  Array.from(mypfp).forEach(element => {
-    element?.classList.toggle("border");
-  });
+  mypfp?.classList.toggle("border");
 
   //Bring moon infront and hide the sun
   document.querySelector(".sun-logo").classList.toggle("animate-sun");
@@ -75,11 +73,11 @@ function checkColorScheme() {
     document.body.classList.add('darkmode');
     site_title?.classList.add("headerStyling");
     site_nav?.classList.add("navStyling");
-    border?.classList.add("border");
+    mypfp?.classList.add("border");
   } else {
     document.body.classList.remove('darkmode');
     site_title?.classList.remove("headerStyling");
     site_nav?.classList.remove("navStyling");
-    border?.classList.remove("border");
+    mypfp?.classList.remove("border");
   }
 }

@@ -62,7 +62,7 @@
 .navStyling {
     background: none;
     color: var(--clr-text-light) !important;
-    border: 1px solid none;
+    border: 1px solid var(--clr-light);
 }
 
 .border {
