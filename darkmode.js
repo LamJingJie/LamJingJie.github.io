@@ -17,9 +17,9 @@ const toggleDarkMode = (status) => {
   if(status){
     // Dark mode is enabled
     document.body.classList.add('darkmode');
-    site_title?.classList.add("headerStyling");
-    site_nav?.classList.add("navStyling");
-    pfp?.classList.add("borderStyling");
+    site_title.classList.add("headerStyling");
+    site_nav.classList.add("navStyling");
+    pfp.classList.add("borderStyling");
 
     //Bring moon infront and hide the sun
     document.querySelector(".moon-logo").classList.add("animate-moon");
@@ -27,9 +27,9 @@ const toggleDarkMode = (status) => {
   }else{
     // Dark mode is disabled
     document.body.classList.remove('darkmode');
-    site_title?.classList.remove("headerStyling");
-    site_nav?.classList.remove("navStyling");
-    pfp?.classList.remove("borderStyling");
+    site_title.classList.remove("headerStyling");
+    site_nav.classList.remove("navStyling");
+    pfp.classList.remove("borderStyling");
 
     // Bring sun infront and hide the moon
     document.querySelector(".sun-logo").classList.remove("animate-sun");
