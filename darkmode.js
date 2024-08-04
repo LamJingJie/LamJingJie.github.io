@@ -1,7 +1,5 @@
 //------------This section is used for website or ios only----------------
 
-let darkMode = localStorage.getItem('darkMode');
-
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
 let toggle_container = document.getElementById("togglecontainer");
@@ -20,6 +18,7 @@ const toggleDarkMode = (status) => {
     site_title.classList.add("headerStyling");
     site_nav.classList.add("navStyling");
     pfp.classList.add("borderStyling");
+    console.log("Dark mode enabled");
 
     //Bring moon infront and hide the sun
     document.querySelector(".moon-logo").classList.add("animate-moon");
@@ -42,7 +41,7 @@ const toggleDarkMode = (status) => {
 // When someone clicks the button
 const handleDarkModeToggle = () => {
   // get their darkMode setting
-  darkMode = localStorage.getItem('darkMode');
+  let darkMode = localStorage.getItem('darkMode');
 
   // if it not current enabled, enable it
   if (darkMode !== 'enabled') {
@@ -77,6 +76,7 @@ if (check) {
   //remove btn to toggle dark mode
   toggle_container?.classList.add("remove");
 } else {
+  let darkMode = localStorage.getItem('darkMode');
   //Display the btn to toggle dark mode (avail to web & ios only)
   toggle_container?.classList.remove("remove");
 
