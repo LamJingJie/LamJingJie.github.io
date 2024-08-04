@@ -5,7 +5,7 @@ let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 let site_title = document.getElementById("site-title");
 let site_nav = document.getElementById("site-nav");
-let border = document.getElementsByClassName("border");
+let mypfp = document.getElementsByClassName("mypfp");
 
 let toggle_container = document.getElementById("togglecontainer");
 let check = false;
@@ -16,8 +16,8 @@ const toggleDarkMode = (status) => {
   document.body.classList.toggle('darkmode');
   site_title?.classList.toggle("headerStyling");
   site_nav?.classList.toggle("navStyling");
-  Array.from(border).forEach(element => {
-    element.classList.toggle("border");
+  Array.from(mypfp).forEach(element => {
+    element?.classList.toggle("border");
   });
 
   //Bring moon infront and hide the sun
