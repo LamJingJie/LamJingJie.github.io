@@ -3,6 +3,7 @@
 let darkMode = localStorage.getItem('darkMode');
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
 let toggle_container = document.getElementById("togglecontainer");
 let check = false;
 
@@ -11,17 +12,30 @@ const toggleDarkMode = (status) => {
   let site_title = document.getElementById("site-title");
   let site_nav = document.getElementById("site-nav");
   let pfp = document.getElementById("mypfp");
-
-
   localStorage.setItem('darkMode', status);
-  document.body.classList.toggle('darkmode');
-  site_title?.classList.toggle("headerStyling");
-  site_nav?.classList.toggle("navStyling");
-  pfp?.classList.toggle("borderStyling");
+  
+  if(status){
+    // Dark mode is enabled
+    document.body.classList.add('darkmode');
+    site_title?.classList.add("headerStyling");
+    site_nav?.classList.add("navStyling");
+    pfp?.classList.add("borderStyling");
 
-  //Bring moon infront and hide the sun
-  document.querySelector(".sun-logo").classList.toggle("animate-sun");
-  document.querySelector(".moon-logo").classList.toggle("animate-moon");
+    //Bring moon infront and hide the sun
+    document.querySelector(".moon-logo").classList.add("animate-moon");
+    document.querySelector(".sun-logo").classList.add("animate-sun");
+  }else{
+    // Dark mode is disabled
+    document.body.classList.remove('darkmode');
+    site_title?.classList.remove("headerStyling");
+    site_nav?.classList.remove("navStyling");
+    pfp?.classList.remove("borderStyling");
+
+    // Bring sun infront and hide the moon
+    document.querySelector(".sun-logo").classList.remove("animate-sun");
+    document.querySelector(".moon-logo").classList.remove("animate-moon");
+  }
+
 }
 
 
@@ -56,7 +70,7 @@ let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 
 //if true means user is on android
-if (check === true) {
+if (check) {
 
   this.checkColorScheme();
 
