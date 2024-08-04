@@ -29,6 +29,11 @@
     transition: visibility 0s, opacity 0.5s linear;
 }
 
+.about_data{
+    flex:1; 
+    font-size: 16px;
+}
+
 
 :root {
     --clr-light: #fdffc4;
