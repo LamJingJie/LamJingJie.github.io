@@ -25,7 +25,7 @@ const toggleDarkMode = (status) => {
 
 
 // When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
+const handleDarkModeToggle = () => {
   // get their darkMode setting
   darkMode = localStorage.getItem('darkMode');
 
@@ -36,7 +36,13 @@ darkModeToggle.addEventListener('click', () => {
   } else {
     toggleDarkMode(null);
   }
-});
+};
+
+// Remove the event listener if it exists
+darkModeToggle.removeEventListener('click', handleDarkModeToggle);
+
+// Add the event listener
+darkModeToggle.addEventListener('click', handleDarkModeToggle);
 
 
 
