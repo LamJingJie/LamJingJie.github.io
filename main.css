@@ -28,8 +28,7 @@
 }
 
 .about_data{
-    flex:1; 
-    font-size: 16px;
+    background-color: red;
 }
 
 
@@ -47,7 +46,7 @@
   
     --ff-title: "Playfair Display", serif;
     --ff-body: "Assistant", sans-serif;
-  }
+}
 
 /*--------------Dark Mode--------------*/
 .darkmode {
