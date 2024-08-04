@@ -4,8 +4,6 @@
     float: left;
 }
 
-
-
 .post_img_container:hover div{
     width: 90%;
     visibility: visible;
