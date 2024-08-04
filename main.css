@@ -28,7 +28,8 @@
 }
 
 .about_data{
-    background-color: red;
+    flex: 1;
+    font-size: 16px;
 }
 
 
