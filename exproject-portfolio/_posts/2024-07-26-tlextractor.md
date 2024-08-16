@@ -37,7 +37,7 @@ TLExtractor is a Python script that extracts data from tldraw pages, saves it as
 This is mainly used to extract specific students data. Where they would utilize a template to submit their project to. In which this script would then utilize to extract the necessary data.
 
 
-<br><br>
+<br>
 
 <div class="video-container">
   <h3 style="text-align: center;">Video</h3>
@@ -49,7 +49,7 @@ This is mainly used to extract specific students data. Where they would utilize 
 
 1. `Depth-First Search` algorithm used to search through tree-like data structure, starting from the deepest and working up.
 
-1. `Async programming` creating as many coroutine objects as there are pages
+1. `Async programming` creating as many coroutine objects as there are pages. Running all of them concurrently while ensuring minimal overhead
 
 1. `Multi-Processing` used to process multiple images in true parallel
 
